@@ -1,6 +1,6 @@
-# Your App
+# Customer Sevice App
 
-Simple Electron app with a maintainable structure, no frontend build tools required.
+Simple Customer Sevice App using Electron, no frontend build tools required.
 
 ## Structure
 
