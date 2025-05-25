@@ -1,0 +1,15 @@
+{
+  "name": "Customer-Serv",
+  "version": "1.0.0",
+  "main": "src/main/main.js",
+  "description": "Electron app with simple maintainable structure",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  }
+}

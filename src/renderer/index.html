@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Service Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="formTitle">Add Customer & Service Details</h2>
+    <form id="customerForm" autocomplete="off">
+      <input type="hidden" id="recordId" />
+      <label>Name</label>
+      <input type="text" id="name" required />
+      <label>Email</label>
+      <input type="email" id="email" required />
+      <label>Phone</label>
+      <input type="tel" id="phone" required />
+      <label>Service</label>
+      <input type="text" id="service" required />
+      <label>Details</label>
+      <textarea id="details" rows="2"></textarea>
+      <div class="form-buttons">
+        <button type="submit" id="saveBtn">Save</button>
+        <button type="button" id="cancelEditBtn" class="cancel-btn" style="display:none;">Cancel</button>
+      </div>
+      <div id="result" class="msg"></div>
+    </form>
+    <input type="text" id="searchBox" placeholder="🔍 Search by any keyword..." />
+    <div id="results"></div>
+  </div>
+  <!-- Custom Modal Confirm -->
+  <div id="customConfirm">
+    <div class="modal-box">
+      <div id="customConfirmMsg" style="margin-bottom:24px;">Are you sure you want to delete this record?</div>
+      <button id="customConfirmYes" type="button">Yes</button>
+      <button id="customConfirmNo" type="button">No</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
